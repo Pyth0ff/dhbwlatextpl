@@ -1,4 +1,6 @@
 #!/bin/bash
 
+
+TEXFILE=ausarbeitung.tex
 cd LaTex\ Vorlage/
-pdflatex vorlage.tex && pdflatex vorlage.tex
+pdflatex ${TEXFILE} && ${TEXFILE} vorlage.tex

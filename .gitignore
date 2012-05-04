@@ -3,6 +3,15 @@
 */*~
 */*.swp
 
-*/*.aux
-*/*.log
-*/*.pdf
+*.aux
+*.log
+*.toc
+*.out
+*.lol
+*.lot
+*.lof
+*.ist
+*.idx
+*.gls
+*.glg
+*.glo
