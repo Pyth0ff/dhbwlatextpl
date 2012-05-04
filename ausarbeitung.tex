@@ -1,0 +1,108 @@
+% everything is in seperate documentClass
+\documentclass{./tpl/styles/dhbook}                                         	
+
+%%%%%%%%%%%%%%%%%%%%%%% Definitionen bzgl. der Arbeit %%%%%%%%%%%%%%%%%%%%%%%
+\dhlogo{./img/dhbw_logo.png}
+\type{1. Projektarbeit}           
+\title{MeinThema}
+\subtitle{Themenuntertitel}
+\author{Max Mustermann}
+\kurs{Muster11}
+\studiengang{Informationstechnik}
+\fspo{Bachelor of Engenering, Praxismodul I}
+\date{\today}
+\schoolSupervisor{Prof. Schnattinger}
+\companyName{Muster GmbH}
+\companyAddress{Musterhausen}
+\companyContact{MyCompany\\
+		MeineStrasse 23\\
+		87654 NeuHausen\\
+		Tel: 05421/4324-22\\
+		Web: \url{mycompany.de}}
+\companyLogo{./img/mycompany_logo.png}
+\companySupervisor{Prof. Dr. Donald Ervin Knuth}
+
+\issperrvermerk
+
+
+%%%%%%%%%%%%% title, Index, Abkürzungsverzeichnis und Glossar erstellen %%%%%%%%%%%%
+
+
+
+\makeindex
+\makeglossaries
+
+\include{chapters/0_glossary}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% PDF-Optionen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+	bookmarksopen=false,
+	bookmarksnumbered=true,
+	bookmarksopenlevel=0,
+	pdftitle=\valueTitle,
+	pdfsubject=\valueSubtitle,
+	pdfauthor=\valueAuthor,
+	pdfborder=0,
+	pdfcreator=\valueAuthor,
+	pdfstartview=Fit,
+	pdfpagelayout=SinglePage
+}
+
+\begin{document}
+
+
+	% Aktiviere blankes Seitenlayout
+    \pagestyle{fancy}	   
+    % Roemische Seitenzahlen
+    \pagenumbering{Roman}
+    
+    % erzeuge Titelseite + ggf Sperrvermerk
+    \maketitle
+    
+	
+    % Zusammenfassungen
+    \include{chapters/0_zusammenfassung}
+
+    % einfuegen des Vorwortes
+    \include{chapters/0_vorwort}
+    
+    % erzeuge Inhaltsverzeichnis
+    \tableofcontents
+    \newpage
+
+    % erzeige Illustartionsverzeichnis (Abbildungen, tabellen Quellcode)
+    \listofillustrations
+
+    %% erzeuge Abkuerzungsverzeichnis
+    \listglossaries
+
+    % Aktiviere FancyHeader
+    \pagestyle{fancy}	   
+    % Arabische Seitenzahlen
+    \pagenumbering{arabic}	
+
+    % erstes Kapitel
+    \include{chapters/1_einleitung}
+    % zweites Kapitel
+    \include{chapters/2_dummy}
+	
+
+
+    
+
+    % Ausgabe Literaturverzeichnis
+%    \include{chapters/Z_literaturverzeichnis}
+      
+    
+    \bibliography{./literatur.bib}
+    \clearpage
+    
+    % erzeuge Erklaerung    
+    \makestatement
+
+	
+\end{document}
+
+
+
+

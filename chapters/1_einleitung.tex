@@ -1,0 +1,57 @@
+\chapter{{\LaTeX}-Vorlage}
+Das  hier ist eine kleine {\LaTeX}-Vorlage fuer die DHBW Loerach.
+Speziell fuer den fachbereich Informatik.
+
+\section{Danke Dounald}
+Dank Dounald Knuth\cite{knuth} der Erfinder von \TeX~ koennen wir hier ganz schoen, tolle und Fancy Ausarbeitungen schreiben ohne einen gedanken an das Formatieren zu verschweden.
+
+
+\newpage
+\section{Aufbau der Vorlage}
+Die Vorlage ist von der Standart Vorlage book.cls abgeleitet und ist direkt auf DIN A4 gesetzt.
+Auch die Schriftart ist auf 12pt und 1,5 Zeilebabstand gesetzt.
+
+\section{Beispiele}
+Nun sollen einzelne Beispiele folgen, wie Bilder, Tabelle, Auflistungen, Programmcode, Zitate 
+
+\subsection{Bilder}
+ein Bild wird ganz einfach eingebunden, darum herum wird ein \textit{figure}  gesetzt damit die Abbildung auf auf der Abbildungsauflistung erscheint.\\
+Mit \textit{caption} wird eine Abbildungsunterschrift angegeben und mit \textit{label} wird ein label vergeb mit dem man auf eine Abbildung verweisen kann.
+\begin{figure}[hb] \centering
+  \includegraphics[width=3cm]{./img/tux.png}
+  \caption{eine Bild Unterschrift}
+  \label{tux_1}
+\end{figure}
+Als Beispiel eines label kann in \ref{tux_1} gesehen werden das dort ein Pinguin abgebildet wird.
+
+
+\subsection{Tabelle}
+Eine Tabelle wird wie bei einer Abbildung wie folgt dargestellt: \\
+
+\begin{table}[hb] \centering
+\begin{tabular}{|r|r|}
+\hline
+Zahl & Quatsch \\
+\hline
+1  &  0  \\
+\hline
+2  &  1  \\
+\hline
+3  &  2  \\
+\hline
+4  &  3  \\
+\hline
+
+\end{tabular}
+
+\caption{eine QuatschTabelle}
+\label{tabquatsch}
+\end{table}
+
+
+
+\section{Glossar}
+Das Glossar listet alle Verwendeten Begriffe auf und verlinkt diese auch im Text. Da ist \gls{LaTeX} echt cool und es macht spass mit einem \gls{computer} zuarbeiten.
+
+
+

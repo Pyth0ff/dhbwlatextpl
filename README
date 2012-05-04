@@ -1,0 +1,55 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                         %%
+%%                   LaTeX Vorlage für die Studenten der                   %%
+%%              Dualen Hochschule Baden-Württemberg Loerrach               %%
+%%                                                                         %%
+%%  Die Vorlage orientiert sich an den Gestaltungsrichtlinien der DHBW     %%
+%%          								                               %%
+%% 	keine Garantie auf Korrektheit nach Richtlinien der DHBW Lörrach       %%
+%%  Keine Garantie oder Gewehr auf jeder Art der Benutzung                 %%
+%%                                                                         %%
+%% Ersteller:        Markus Schutz    (RV - WI06)                          %%
+%% Änderungen durch: Gunnar Jänicke   (LÖ - TIT09A)  16. September 2011    %%
+%% Änderungen durch: Daniel Friedrich (LÖ - TIF11A)  2012/05/04            %%
+%%                                                                         %%
+%%                                                                         %%
+%%                                                                         %%
+%%                                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+= README =
+
+== DESCRIPTION ==
+
+Dies LaTeX Vorlage ist speziell fuer Studenten an der DHBW-Loerrach im Studiengang Informatik gedacht.
+Sie entspricht den aktuelle(Mai 2005) Gestaltungsrichtlinien der DHBW.
+die Orginalvorlage stammt von der  Markus Schutz (RV - WI06) und wurde zuerst von Gunnar Jaenicke (LO TIT09A) angepasst.
+Zuletzt von Daniel Friedrich (LO - TIF11A) komplett ueberarbeitet.
+
+== Vorlagenaufbau ==
+
+ * ~/ausarbeitung.tex
+    die Datei ausarbeitung.tex ist die Eigendliche LaTeX Datei die bearbeitet werden muss, 
+    hier werden Author, Unternehmen usw, definiert und auch die einzelnen Kapitel eingebunden.
+    Nach belieben kann auch nur diese Datei verwendet werden, aber das Ablege der Kapitel in einzelne Dateien erhoeht die uebersichtlichkeit.
+    
+
+ * ~/styles/dhbook.cls 
+    Die gesamte Gestaltung und Anpassungen sind in der Datei ~/styles/dhbook.cls 
+
+ * ~/chapters/*
+    in diesem Ordner sind die einzelnen Kapitel und SonderSeiten wie Vorwort, Zusammenfassung, Glossar
+
+
+
+== technisches ==
+ Diese Vorlage baut auf dem Standart Documentclass book.cls auf und ueberschreibt auch einzelne Befehle.
+
+
+== TODO ==
+--was verbessert werden muss--
+
+ * Doku ueberarbeiten
+ * LiterturVerzeichnis anpassen
+ * 
+
